@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Genshoe Addon for Blender</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+	<style>
+		#xx {
+			fill: rgb(255, 255, 255);
+			height: 50px;
+		}
+
+		#z {
+			height: 200px;
+		}
+
+		body {
+			font-family: 'Inter', sans-serif;
+		}
+	</style>
+</head>
+
+<body class="bg-gradient-to-r from-green-100 via-indigo-100 to-purple-100 text-gray-800">
+	<div id="header"></div>
+	<!----------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- HERO -->
+	<section class="text-center py-16">
+
+		<h2 class="text-4xl font-bold text-gray-800 mb-4">
+			Trung tâm hỗ trợ
+		</h2>
+
+		<p class="text-gray-600 max-w-2xl mx-auto">
+			Tìm câu trả lời cho các vấn đề thường gặp khi sử dụng addon Genshoe.
+		</p>
+
+	</section>
+
+
+	<!-- SUPPORT GRID -->
+	<section class="max-w-6xl mx-auto px-6 pb-20 grid md:grid-cols-3 gap-8">
+
+
+		<!-- FAQ -->
+		<div class="bg-white p-6 rounded-xl shadow">
+
+			<h3 class="text-xl font-semibold mb-3">
+				❓ FAQ
+			</h3>
+
+			<p class="text-gray-600 mb-4">
+				Các câu hỏi thường gặp về addon.
+			</p>
+
+			<a href="/faq" class="text-blue-600 font-medium">
+				Xem chi tiết →
+			</a>
+
+		</div>
+
+
+		<!-- DOCUMENTATION -->
+		<div class="bg-white p-6 rounded-xl shadow">
+
+			<h3 class="text-xl font-semibold mb-3">
+				📚 Documentation
+			</h3>
+
+			<p class="text-gray-600 mb-4">
+				Hướng dẫn sử dụng chi tiết addon Genshoe.
+			</p>
+
+			<a href="/docs" class="text-blue-600 font-medium">
+				Xem tài liệu →
+			</a>
+
+		</div>
+
+
+		<!-- CONTACT -->
+		<div class="bg-white p-6 rounded-xl shadow">
+
+			<h3 class="text-xl font-semibold mb-3">
+				📩 Contact Support
+			</h3>
+
+			<p class="text-gray-600 mb-4">
+				Liên hệ trực tiếp nếu bạn cần hỗ trợ.
+			</p>
+
+			<a href="/contact" class="text-blue-600 font-medium">
+				Liên hệ →
+			</a>
+
+		</div>
+
+	</section>
+
+
+	<!-- COMMON ISSUES -->
+	<section class="max-w-4xl mx-auto px-6 pb-20">
+
+		<h3 class="text-2xl font-bold mb-6 text-center">
+			Các vấn đề thường gặp
+		</h3>
+
+		<div class="space-y-6">
+
+			<div class="bg-white p-6 rounded-xl shadow">
+				<h4 class="font-semibold mb-2">
+					Addon không xuất hiện trong Blender
+				</h4>
+
+				<p class="text-gray-600">
+					Hãy đảm bảo bạn đã bật addon trong Preferences → Add-ons.
+				</p>
+			</div>
+
+			<div class="bg-white p-6 rounded-xl shadow">
+				<h4 class="font-semibold mb-2">
+					Addon không hoạt động
+				</h4>
+
+				<p class="text-gray-600">
+					Kiểm tra phiên bản Blender có tương thích với addon không.
+				</p>
+			</div>
+
+			<div class="bg-white p-6 rounded-xl shadow">
+				<h4 class="font-semibold mb-2">
+					Lỗi khi cài addon
+				</h4>
+
+				<p class="text-gray-600">
+					Hãy cài addon bằng file .zip trong Preferences → Install.
+				</p>
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+
+
+
+
+	<!----------------------------------------------------------------------------------------------------------------------->
+	<div id="footer"></div>
+	<script>
+		fetch("/components/header.html").then(r => r.text()).then(t => header.innerHTML = t)
+		fetch("/components/footer.html").then(r => r.text()).then(t => footer.innerHTML = t)
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Genshoe Addon for Blender</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+	<style>
+		#xx {
+			fill: rgb(255, 255, 255);
+			height: 50px;
+		}
+
+		#z {
+			height: 200px;
+		}
+
+		body {
+			font-family: 'Inter', sans-serif;
+		}
+	</style>
+</head>
+
+<body class="bg-gradient-to-r from-green-100 via-indigo-100 to-purple-100 text-gray-800">
+	<div id="header"></div>
+	<!----------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+	<div class="flex max-w-7xl mx-auto">
+
+
+		<!-- SIDEBAR -->
+
+		<aside class="w-64 p-6 border-r bg-white hidden md:block">
+
+			<h3 class="font-semibold mb-4">
+				Documentation
+			</h3>
+
+			<ul class="space-y-2 text-gray-600">
+
+				<li><a href="#install">Installation</a></li>
+				<li><a href="#start">Getting Started</a></li>
+				<li><a href="#tools">Tools</a></li>
+				<li><a href="#workflow">Workflow</a></li>
+				<li><a href="#faq">FAQ</a></li>
+
+			</ul>
+
+		</aside>
+
+
+
+		<!-- CONTENT -->
+
+		<main class="flex-1 p-10">
+
+
+
+			<h1 class="text-4xl font-bold mb-8">
+				Genshoe Documentation
+			</h1>
+
+
+
+			<!-- INSTALL -->
+
+			<section id="install" class="mb-12">
+
+				<h2 class="text-2xl font-semibold mb-4">
+					Installation
+				</h2>
+
+				<p class="text-gray-600 mb-4">
+
+					Cài đặt addon Genshoe trong Blender rất đơn giản.
+
+				</p>
+
+				<ol class="list-decimal ml-6 text-gray-700 space-y-2">
+
+					<li>Tải file addon (.zip)</li>
+					<li>Mở Blender</li>
+					<li>Vào Edit → Preferences</li>
+					<li>Chọn Add-ons</li>
+					<li>Nhấn Install</li>
+					<li>Chọn file .zip của addon</li>
+
+				</ol>
+
+			</section>
+
+
+
+			<!-- GETTING STARTED -->
+
+			<section id="start" class="mb-12">
+
+				<h2 class="text-2xl font-semibold mb-4">
+					Getting Started
+				</h2>
+
+				<p class="text-gray-600">
+
+					Sau khi cài addon, bạn có thể truy cập các công cụ của Genshoe
+					trong panel của Blender.
+
+				</p>
+
+			</section>
+
+
+
+			<!-- TOOLS -->
+
+			<section id="tools" class="mb-12">
+
+				<h2 class="text-2xl font-semibold mb-4">
+					Tools
+				</h2>
+
+				<p class="text-gray-600 mb-4">
+
+					Genshoe cung cấp nhiều công cụ modeling mạnh mẽ.
+
+				</p>
+
+				<div class="bg-white p-6 rounded-lg shadow">
+
+					<h3 class="font-semibold mb-2">
+						Edge Tools
+					</h3>
+
+					<p class="text-gray-600">
+
+						Các công cụ giúp chỉnh sửa cạnh nhanh và chính xác.
+
+					</p>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- WORKFLOW -->
+
+			<section id="workflow" class="mb-12">
+
+				<h2 class="text-2xl font-semibold mb-4">
+					Workflow
+				</h2>
+
+				<p class="text-gray-600">
+
+					Genshoe được thiết kế để giúp bạn modeling nhanh hơn trong Blender.
+
+				</p>
+
+			</section>
+
+
+
+			<!-- FAQ -->
+
+			<section id="faq">
+
+				<h2 class="text-2xl font-semibold mb-4">
+					FAQ
+				</h2>
+
+				<div class="space-y-4">
+
+					<div class="bg-white p-4 rounded-lg shadow">
+
+						<h4 class="font-semibold">
+							Addon không hiển thị?
+						</h4>
+
+						<p class="text-gray-600">
+
+							Hãy kiểm tra xem addon đã được bật trong Preferences chưa.
+
+						</p>
+
+					</div>
+
+					<div class="bg-white p-4 rounded-lg shadow">
+
+						<h4 class="font-semibold">
+							Addon có hỗ trợ Blender version nào?
+						</h4>
+
+						<p class="text-gray-600">
+
+							Addon hỗ trợ các phiên bản Blender mới nhất.
+
+						</p>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+		</main>
+
+	</div>
+
+
+	<!----------------------------------------------------------------------------------------------------------------------->
+	<div id="footer"></div>
+	<script>
+		fetch("/components/header.html").then(r => r.text()).then(t => header.innerHTML = t)
+		fetch("/components/footer.html").then(r => r.text()).then(t => footer.innerHTML = t)
+	</script>
+</body>
+
+</html>
